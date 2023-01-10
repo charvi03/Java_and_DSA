@@ -1,3 +1,5 @@
+package Variables_and_dataTypes;
+
 public class type_conversion {
     public static void main(String[] args) {
         //type conversion

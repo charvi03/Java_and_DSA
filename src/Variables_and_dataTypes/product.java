@@ -1,3 +1,5 @@
+package Variables_and_dataTypes;
+
 import java.util.Scanner;
 
 public class product {
@@ -8,6 +10,6 @@ public class product {
         System.out.println("Enter the second number");
         int b = sc.nextInt();
         int product = a * b;
-        System.out.println("The product is " + product);
+        System.out.println("The ans is " + product);
     }
 }

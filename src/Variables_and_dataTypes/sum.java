@@ -1,3 +1,5 @@
+package Variables_and_dataTypes;
+
 import java.util.Scanner;
 
 public class sum {
@@ -11,6 +13,6 @@ public class sum {
         //int a = 10;
         // int b = 5;
         int sum = a + b;
-        System.out.println("The sum is " + sum);
+        System.out.println("The ans is " + sum);
     }
 }

@@ -1,3 +1,5 @@
+package Variables_and_dataTypes;
+
 public class type_prmotion {
     public static void main(String[] args) {
         char a = 'a';

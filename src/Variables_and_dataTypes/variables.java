@@ -1,3 +1,5 @@
+package Variables_and_dataTypes;
+
 public class variables {
     public static void main(String[] args) {
         int a = 10;
