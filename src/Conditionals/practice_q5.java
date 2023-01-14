@@ -23,7 +23,7 @@ public class practice_q5 {
         } else {
             System.out.println("It is not a leap year");
         }
-
+//ANOTHER  WAY TO DO IT
 //        boolean x = (year % 4) == 0;
 //        boolean y = (year % 100) != 0;
 //        boolean z = ((year % 100 == 0) && (year % 400 == 0));
@@ -32,5 +32,10 @@ public class practice_q5 {
 //        } else {
 //            System.out.println(year + " is not a leap year");
 //        }
+        //ANOTHER  WAY TO DO IT
+//        if((year % 400 == 0) || ((year % 4 == 0) && (year % 100 != 0)))
+//            System.out.println(year + " is a Leap Year");
+//        else
+//            System.out.println(year + " is not a Leap Year");
     }
 }
