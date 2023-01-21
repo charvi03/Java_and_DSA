@@ -1,15 +1,12 @@
 package Functions;
 
-public class prime_or_not {
+public class primes_in_range {
     public static boolean isPrime(int n) {
-        //boolean isPrime = true; // need not declare
         if (n == 2) {
             return true;
         }
-        for (int i = 2; i <= n - 1; i++) {
+        for (int i = 2; i <= Math.sqrt(n); i++) {
             if (n % i == 0) {
-                // isPrime = false;
-                // break; //or use return statement --return false
                 return false;
             }
         }
@@ -17,8 +14,15 @@ public class prime_or_not {
         return true;
     }
 
+    public static void primeRange(int n) {
+        for (int i = 2; i <= n; i++) {
+            if (isPrime(i)) {
+                System.out.print(i + " ");
+            }
+        }
+    }
+
     public static void main(String[] args) {
-        System.out.println(isPrime(12));
-        System.out.println(isPrime(5));
+        primeRange(90);
     }
 }
