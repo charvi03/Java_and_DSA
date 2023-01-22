@@ -1,7 +1,7 @@
 package Advanced_patterns;
 
 public class inverted_rotated_half_pyramid {
-    public static void printStars(int rows, int cols) {
+    public static void printStars(int rows) {
         int n = 4;
         for (int i = 1; i <= rows; i++) {
             //spaces
@@ -17,6 +17,6 @@ public class inverted_rotated_half_pyramid {
     }
 
     public static void main(String[] args) {
-        printStars(4, 4);
+        printStars(4);
     }
 }
