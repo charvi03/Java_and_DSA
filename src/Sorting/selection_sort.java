@@ -17,9 +17,11 @@ public class selection_sort {
                 }
             }
             //swap
-            int temp = arr[minPos];
-            arr[minPos] = arr[i];
-            arr[i] = temp;
+            if (minPos != i) {
+                int temp = arr[minPos];
+                arr[minPos] = arr[i];
+                arr[i] = temp;
+            }
         }
 
     }
