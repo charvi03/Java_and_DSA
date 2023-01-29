@@ -33,8 +33,11 @@ public class bubble_sort {
 
     public static void main(String[] args) {
         int arr[] = {5, 4, 1, 3, 2};
+        // int arr1[] = {1, 2, 3, 4, 5};
         sort(arr);
         printarr(arr);
+//        sort(arr1);
+//        printarr(arr1);
 
     }
 }
