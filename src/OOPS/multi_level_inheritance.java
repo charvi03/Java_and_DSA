@@ -9,7 +9,7 @@ public class multi_level_inheritance {
     }
 }
 
-class Animals {
+  class Animals {
     String color;
 
     void eat() {
