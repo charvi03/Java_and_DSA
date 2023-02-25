@@ -35,6 +35,7 @@ public class merge_sort {
 
             }
             k++;
+        }
 
             while (i <= mid) {
                 temp[k++] = arr[i++];
@@ -47,7 +48,7 @@ public class merge_sort {
                 arr[i] = temp[k];
             }
         }
-    }
+
 
     public static void main(String[] args) {
         int arr[] = {-2,6, 3, 9, 5, 2, 8};
