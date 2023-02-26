@@ -13,7 +13,7 @@ public class quick_sort {
 
         if (si >= ei) {
             return;
-        }//pivot last element
+        }// take pivot last element
         int pidx = partition(arr, si, ei);
         quickSort(arr, si, pidx - 1);//left
         quickSort(arr, pidx + 1, ei);
