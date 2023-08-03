@@ -3,7 +3,8 @@ package OOPS;
 public class access_modifiers {
     public static void main(String[] args) {
         BankAccount myAcc = new BankAccount();
-        myAcc.userName = "charvi03";
+        myAcc.userName = "charvikhurana";
+        //myAcc.passwrod="charvi";
         // password cannot be accessed here.
         myAcc.setPassword("charvi");
     }
