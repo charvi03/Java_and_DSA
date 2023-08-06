@@ -14,7 +14,7 @@ public class search_InRotated_arr {
         //mid on l1
         if (arr[si] <= arr[mid]) {
             //case a
-            if (arr[si] <= target && target <= arr[ei]) {
+            if (arr[si] <= target && target <= arr[mid]) {
                 return search(arr, target, si, mid - 1);
             } else {
                 //case b
