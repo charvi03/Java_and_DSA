@@ -23,20 +23,46 @@ public class N_queens {
         return true;
     }
 
-    public static void nQueens(char board[][], int row) {
+//    public static void nQueens(char board[][], int row) {
+//        //base case
+//        if (row == board.length) {
+//            //for printing the board
+//            //printboard(board);
+//            //for counting ways
+//            count++;
+//            return;
+//        }
+//        //column loop
+//        for (int j = 0; j < board.length; j++) {
+//            if (isSafe(board, row, j)) {
+//                board[row][j] = 'Q';
+//                nQueens(board, row + 1);
+//                board[row][j] = 'X';//backtracking step
+//            }
+//        }
+//    }
+
+    //printing one solution
+    public static boolean nQueens(char board[][], int row) {
         //base case
         if (row == board.length) {
-            printboard(board);
-            return;
+            //for printing the board
+            //printboard(board);
+            //for counting ways
+            count++;
+            return true;
         }
         //column loop
         for (int j = 0; j < board.length; j++) {
             if (isSafe(board, row, j)) {
                 board[row][j] = 'Q';
-                nQueens(board, row + 1);
+                if (nQueens(board, row + 1)) {
+                    return true;
+                }
                 board[row][j] = 'X';//backtracking step
             }
         }
+        return false;
     }
 
     public static void printboard(char board[][]) {
@@ -49,6 +75,8 @@ public class N_queens {
         }
     }
 
+    static int count = 0;
+
     public static void main(String[] args) {
         int n = 4;
         char board[][] = new char[n][n];
@@ -58,6 +86,14 @@ public class N_queens {
                 board[i][i] = 'X';
             }
         }
-        nQueens(board, 0);
+//        nQueens(board, 0);
+//        System.out.println("Total ways to solve N queens =" + count);
+
+        if (nQueens(board, 0)) {
+            System.out.println("Solution is possible");
+            printboard(board);
+        } else {
+            System.out.println("Solution is not possible");
+        }
     }
 }
